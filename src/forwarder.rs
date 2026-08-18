@@ -110,6 +110,7 @@ pub async fn setup(
             lrwn_filters::Filters {
                 dev_addr_prefixes: server.filters.dev_addr_prefixes.clone(),
                 join_eui_prefixes: server.filters.join_eui_prefixes.clone(),
+                lorawan_only: false,
             },
             downlink_tx.clone(),
         )
